@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yadayada..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact us</title>
+    <style>
+                .media{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pp{
+       display: flex;
+       column-gap: 40px;
+       padding-left: 50px;
+    }
+    .logo{
+       padding-left: 620px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .logo i{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color:beige;
+    }
+    .logo i:hover{
+        background-color: orange;
+    }
+     header{
+            color: black;
+            background-color: burlywood;
+            border: 2px solid black;
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2px;
+            justify-content: space-between;
+            height: 50px;
+            width: 1240px;
+            display: flex;
+            position:sticky;
+            z-index: 300;
+            top: 2px;
+        }
+        ul li{
+            list-style: none;
+        }
+        .linkcontainer{
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 30px;
+
+        }
+    .link a:hover{
+        color:#ea5e2b;
+    }
+    .link a{
+        color:black;
+        text-decoration: none;
+    }
+    .link1 a{
+        text-decoration: none;
+          color:#ea5e2b;
+    }
+    .linkcontainer button{
+        color:white;
+        border: 1px solid white;
+        background-color: black;
+        border-radius: 30px;
+    }
+    .linkcontainer button:hover{
+         background-color:#ff0000;
+
+    }
+    .banner{
+        position: relative;
+        width: 1240px;
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    .banner img{
+        position: relative;
+        display: block;
+        width: 100%;
+        height:100%;
+        z-index: 100;
+    }
+    .font{
+        position:absolute;
+        z-index: 200;
+        color:white;
+        font-size:50px;
+        font-weight:bolder;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .contact{
+        padding-left: 80px;
+    }
+     .e1{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        width: 150px;
+        text-align: center;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+     .e2{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        width: 150px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .formcon {
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      height: 400px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      color:black;
+    font-weight: bolder;
+    font-style: italic;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+    .signup button{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: 220px;
+    }
+    .signup button:hover{
+        background-color: #ea5e2b;
+    }
+    .contactus{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 30px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+        <div class="media">
+    <div class="pp">
+    <div><i class="fa-solid fa-envelope"></i>info@villa.co</div>
+    <div><i class="fa-solid fa-circle-info"></i>beachbliss.com</div>
+</div>
+    <div class="logo">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-whatsapp"></i>
+    </div>
+</div>
+   <header>
+    <h2>BEACH BLISS</h2>
+    <ul class="linkcontainer">
+        <li class="link"><a href="http://127.0.0.1:5500/home.html" target="_blank">Home</a></li>
+        <li class="link"><a href="http://127.0.0.1:5500/properties.html" target="_blank">Properties</a></li>
+        <li class="link"><a href="http://127.0.0.1:5500/propetydetails.html" target="_blank">Property Details</a></li>
+        <li class="link1"><a href="http://127.0.0.1:5500/contactus.html" target="_blank">Contact</a></li>
+        <button>Schedule a Visit</button>
+    </ul>
+</header>
+<div class="banner">
+    <img src="https://img.freepik.com/premium-photo/contemporary-villa-night-colored-led-lighting-no-one-is-inside_410516-16874.jpg" alt="villa image">
+    <div class="font">
+    <P><b>CONTACT US</B></P>
+</div>
+</div>
+<div class="contactus">
+<div class="contact">
+<h4 style="color: brown;padding-top: 20px;">|CONTACT US</h4>
+<h1>Get In Touch <br>With Our Agents</h1>
+<p style="font-size: small;">Beach bliss is the one of the top villas company all over the world,<br>and it provides the luxury lifestyle,please tell your friends about it</p>
+<div class="e1"><i class="fa-solid fa-phone"></i>- 010-020-0340</div>
+<div class="e2"><i class="fa-solid fa-envelope"></i> info@villa.co</div>
+</div>
+<div class="formcon">
+    <form class="signup">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="enter your full name">
+         <label for="phone">Phone Number</label>
+        <input type="tel" id="number" name="phone" placeholder="enter your valid phone number">
+         <label for="Email">Email Address</label>
+        <input type="email" id="Email" name="name" placeholder="example@gmail.com">
+         <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="enter your subject">
+         <label for="Message">Message</label>
+        <input type="text" id="Message" name="Message" placeholder="enter your Message">
+        <button>Send Message</button>
+    </form>
+</div>
+</div>
+<iframe class="add" style="width:100%;height: 500px;padding-top: 30px;" src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945841.0202770731!2d78.47870441294879!3d15.861889316204774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a47be2b0a6e8d%3A0xb5ed5eea5e1df24!2sMYRA%20GOLDEN%20BEACH%20RESORT!5e0!3m2!1sen!2sin!4v1754218168811!5m2!1sen!2sin" frameborder="0"></iframe>
+<footer>
+    <h4>copyright &copy; Beach Bliss Villa Agency Ldt.All Rights Reserved.Design:Harsha</h4>
+</footer>
+</body>
+</html>

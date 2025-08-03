@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yadayada..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>properties</title>
+    <style>
+        .media{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pp{
+       display: flex;
+       column-gap: 40px;
+       padding-left: 50px;
+    }
+    .logo{
+       padding-left: 620px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .logo i{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color:beige;
+    }
+    .logo i:hover{
+        background-color: orange;
+    }
+     header{
+            color: black;
+            background-color: burlywood;
+            border: 2px solid black;
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2px;
+            justify-content: space-between;
+            height: 50px;
+            width: 1240px;
+            display: flex;
+            position:sticky;
+            z-index: 300;
+            top: 2px;
+        }
+        ul li{
+            list-style: none;
+        }
+        .linkcontainer{
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 30px;
+
+        }
+    .link a:hover{
+        color:#ea5e2b;
+    }
+    .link a{
+        color:black;
+        text-decoration: none;
+    }
+    .link1 a{
+        text-decoration: none;
+          color:#ea5e2b;
+    }
+    .linkcontainer button{
+        color:white;
+        border: 1px solid white;
+        background-color: black;
+        border-radius: 30px;
+    }
+    .linkcontainer button:hover{
+         background-color:#ff0000;
+
+    }
+    .banner{
+        position: relative;
+        width: 1240px;
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    .banner img{
+        position: relative;
+        display: block;
+        width: 100%;
+        height:100%;
+        z-index: 100;
+    }
+    .font{
+        position:absolute;
+        z-index: 200;
+        color:white;
+        font-size:50px;
+        font-weight:bolder;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .butttt{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+    .butttt button{
+        color:white;
+        border: 1px solid white;
+        background-color: black;
+        padding: 10px;
+    }
+    .butttt .bt1{
+        background-color: #ea5e2b;
+    }
+    .butttt button:hover{
+        background-color: #ea5e2b;
+    }
+    .card{
+    width: 350px;
+    height: 580px;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-items:left;
+    background-color: #f5f5dcb2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.cost{
+    display:flex;
+    column-gap: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.villad{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card button{
+        color:white;
+        border: 1px solid white;
+        background-color: black;
+        border-radius: 30px;
+        height: 30px;
+        margin-left: 120px;
+}
+.card button:hover{
+         background-color:#ff0000;
+}
+.cardscontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    row-gap: 20px;
+}
+.cirbut{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+}
+.cirbut  button{
+    color:white;
+    border: 1px solid white;
+    background-color: black;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.cirbut button:hover{
+    background-color: #ea5e2b;
+}
+.cirbut .c1{
+    background-color: #ea5e2b;
+}
+footer{
+        background-color: black;
+        color: white;
+        padding: 30px;
+        margin-top: 10px;
+        text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="media">
+    <div class="pp">
+    <div><i class="fa-solid fa-envelope"></i>info@villa.co</div>
+    <div><i class="fa-solid fa-circle-info"></i>beachbliss.com</div>
+</div>
+    <div class="logo">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-whatsapp"></i>
+    </div>
+</div>
+   <header>
+    <h2>BEACH BLISS</h2>
+    <ul class="linkcontainer">
+        <li class="link"><a href="http://127.0.0.1:5500/home.html" target="_blank">Home</a></li>
+        <li class="link1"><a href="http://127.0.0.1:5500/properties.html" target="_blank">Properties</a></li>
+        <li class="link"><a href="http://127.0.0.1:5500/propetydetails.html" target="_blank">Property Details</a></li>
+        <li class="link"><a href="http://127.0.0.1:5500/contactus.html" target="_blank">Contact</a></li>
+        <button>Schedule a Visit</button>
+    </ul>
+</header>
+<div class="banner">
+    <img src="https://img.freepik.com/premium-photo/contemporary-villa-night-colored-led-lighting-no-one-is-inside_410516-16874.jpg" alt="villa image">
+    <div class="font">
+    <P><b>PROPERTIES</B></P>
+</div>
+</div>
+<div class="butttt">
+    <button class="bt1">Show All</button>
+    <button>Apartment</button>
+    <button>Villa House</button>
+    <button>Pent House</button>
+</div>
+<div class="cardscontainer">
+    <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://www.angsana.com/_next/image?url=https:%2F%2Fwww.angsana.com%2Fassets%2F2023-06%2FBeachfront%20Three%20Bedroom%20Pool%20Villa%20OV_0.jpg&w=3840&q=75" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://villascroatia.com/storage/2020/08/modern-luxury-villa-pool-medulin-croatia-13-1.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse2.mm.bing.net/th/id/OIP.GADLLll-p4kU69-MJV1MnQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse3.mm.bing.net/th/id/OIP.x2N_h2uPy8XgfF-tnGkjRQHaE8?r=0&w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse3.mm.bing.net/th/id/OIP.3Nf_u8Qif0b9W0vfVDvhpwHaD_?r=0&w=2600&h=1400&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse1.mm.bing.net/th/id/OIP.EdiA8rmZVsoaN_ruqBYv9gHaFV?r=0&w=1500&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://www.angsana.com/_next/image?url=https:%2F%2Fwww.angsana.com%2Fassets%2F2023-06%2FBeachfront%20Three%20Bedroom%20Pool%20Villa%20OV_0.jpg&w=3840&q=75" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://villascroatia.com/storage/2020/08/modern-luxury-villa-pool-medulin-croatia-13-1.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse2.mm.bing.net/th/id/OIP.GADLLll-p4kU69-MJV1MnQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+</div>
+<div class="cirbut">
+    <button  class="c1">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>>></button>
+</div>
+<footer>
+    <h4>copyright &copy; Beach Bliss Villa Agency Ldt.All Rights Reserved.Design:Harsha</h4>
+</footer>
+</body>
+</html>
