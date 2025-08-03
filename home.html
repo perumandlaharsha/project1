@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Free CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yadayada..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Project</title>
+<style>
+    .media{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pp{
+       display: flex;
+       column-gap: 40px;
+       padding-left: 50px;
+    }
+    .logo{
+       padding-left: 620px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .logo i{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color:beige;
+    }
+    .logo i:hover{
+        background-color: orange;
+    }
+     header{
+            color: black;
+            background-color: burlywood;
+            border: 2px solid black;
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2px;
+            justify-content: space-between;
+            height: 50px;
+            width: 1240px;
+            display: flex;
+            position:sticky;
+            z-index: 300;
+            top: 2px;
+        }
+        ul li{
+            list-style: none;
+        }
+        .linkcontainer{
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 30px;
+
+        }
+    .link a:hover{
+        color:blue;
+    }
+    .link a{
+        color:black;
+        text-decoration: none;
+    }
+    .linkcontainer button{
+        color:white;
+        border: 1px solid white;
+        background-color: black;
+        border-radius: 30px;
+    }
+    .linkcontainer button:hover{
+         background-color:#ff0000;
+
+    }
+    .banner{
+        position: relative;
+        width: 1240px;
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    .banner img{
+        position: relative;
+        display: block;
+        width: 100%;
+        height:100%;
+        z-index: 100;
+    }
+    .font{
+        position:absolute;
+        z-index: 200;
+        color:white;
+        font-size:50px;
+        font-weight:bolder;
+        top: 30%;
+        left: 20%;
+        transform: translate(-50%,-50%);
+    }
+    .features{
+        display:inline-flex;
+        column-gap: 40px;
+        justify-content: center;
+        align-content: center;
+    }
+    .detailslogo{
+    display:grid;
+    grid-template-columns: 1;
+    row-gap: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
+
+    }
+    .details{
+        display:inline-flex;
+        border: 1px solid black;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       
+    }
+    .daata{
+        padding-left: 10px;
+      margin-right: 20px;
+
+    }
+    .d2{
+        padding-top: 15px;
+    }
+    .d3{
+        padding-top: 15px;
+       
+    }
+    .d4{
+        padding-top: 15px;
+    }
+    iframe{
+        width: 1000px;
+        height: 500px;
+        padding-left: 120px;
+        padding-top: 15px;
+        margin-bottom: 30px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 150px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color:lightblue;
+        position: relative;
+        z-index: 100;
+        column-gap: 20px;
+       justify-content: center;
+       align-content: center;
+
+    }
+    .cardscon{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      position: relative;
+       justify-items: center;
+       margin-top: 10px;
+    }
+    .circle1{
+        background-color: darkblue;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 200;
+        top: 1713px;
+        left:290px;
+        transform: translate(-50%,-50%);
+    }
+      .circle2{
+        background-color: darkblue;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 200;
+        top: 1713px;
+        left:700px;
+        transform: translate(-50%,-50%);
+    }
+      .circle3{
+        background-color: darkblue;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 200;
+        top: 1713px;
+        left:1120px;
+        transform: translate(-50%,-50%);
+    }
+   .bd button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+   }
+   .bd button:hover{
+    background-color:#ff0000;
+   }
+   .bd{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+   .bdbut{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 50px;
+    margin-top: 10px;
+}
+.bestdeals{
+    display: inline-flex;
+    column-gap: 50px;
+    align-items: center;
+    justify-items: center;
+}
+.flat{
+    display:flex;
+   column-gap: 60px;
+   border: 1px solid black;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   margin-left:80px;
+   margin-top: 30px;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.info{
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.bsimg{
+    width: 550px;
+    height: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+}
+.bd1{
+    padding-top: 10px;
+}
+.bd2{
+    padding-top: 20px;
+}
+.bd3{
+    padding-top: 12px;
+}
+.bd4{
+    padding-top: 17px;
+}
+.bd5{
+    padding-top: 20px;
+}
+.button{
+        color:white;
+        border: 1px solid white;
+        background-color: black;
+        border-radius: 30px;
+        height: 30px;
+}
+.button:hover{
+         background-color:#ff0000;
+}
+.card{
+    width: 350px;
+    height: 580px;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-items:left;
+    background-color: #f5f5dcb2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.cost{
+    display:flex;
+    column-gap: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.villad{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card button{
+        color:white;
+        border: 1px solid white;
+        background-color: black;
+        border-radius: 30px;
+        height: 30px;
+        margin-left: 120px;
+}
+.card button:hover{
+         background-color:#ff0000;
+}
+.cardscontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    row-gap: 20px;
+}
+.address{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+}
+.formcon {
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      height: 400px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      color:black;
+    font-weight: bolder;
+    font-style: italic;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+    .signup button{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: 220px;
+    }
+    .signup button:hover{
+        background-color: #ea5e2b;
+    }
+    .banner2{
+        position: relative;
+        width: 1240px;
+        height: 400px;
+        margin-top: 30px;
+    }
+    .banner2 img{
+        position: relative;
+        display: block;
+        width: 1240px;
+        height:400px;
+        z-index: 100;
+    }
+    .font2{
+        position:absolute;
+        z-index: 200;
+        color:brown;
+        font-size:50px;
+        font-weight:bolder;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .end{
+        display: flex;
+        column-gap: 80px;
+        margin-left: 150px;
+        margin-top: 2px;
+    }
+    .e1{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+     .e2{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 30px;
+        margin-top: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="media">
+    <div class="pp">
+    <div><i class="fa-solid fa-envelope"></i>info@villa.co</div>
+    <div><i class="fa-solid fa-circle-info"></i>beachbliss.com</div>
+</div>
+    <div class="logo">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-whatsapp"></i>
+    </div>
+</div>
+   <header>
+    <h2>BEACH BLISS</h2>
+    <ul class="linkcontainer">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Properties</a></li>
+        <li class="link"><a href="#">Property Details</a></li>
+        <li class="link"><a href="#">Contact</a></li>
+        <button>Schedule a Visit</button>
+    </ul>
+</header>
+<div class="banner">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/56c16b140281443.623e932872228.jpg" alt="villa image">
+    <div class="font">
+    <P><B>HURRY!!<br>GET THE BEST <br>VILLA FOR YOU.</B></P>
+</div>
+</div>
+<div class="features">
+    <img style="width: 350px;height: 500px;padding-left: 120px;" src="https://i.pinimg.com/originals/b7/bc/13/b7bc1376358ee6ba089cb40347e52db3.jpg" alt="">
+    <div class="data">
+        <h4 style="color: brown;">FEATURED</h4>
+        <h1>Best Resort & Sea View</h1>
+        <br>
+        <p style="color: brown;">Best Useful Links?</p>
+        <p>Beach bliss is the one of the top villa in chirala,<br>
+            and it provides the luxury lifestyle,<br>
+            please tell your friends about it</p>
+        <p style="color: brown;">Review of customers?-<a href="#">Go</a></p>
+        <p style="color: brown;">For More Details- <a href="#">Go</a></p>
+    </div>
+    <div class="details">
+        <div class="detailslogo">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-file-contract"></i>
+                <i class="fa-solid fa-money-check"></i>
+                <i class="fa-solid fa-person-shelter"></i>
+        </div>
+        <ul class="daata">
+        <li class="d1"><h2>250 M2</h2><p>House plot squares</p></li>
+        <li class="d2"><h2>Constract</h2><p>construction approved</p></li>
+        <li class="d3"><h2>Payment</h2><p>Payment process</p></li>
+        <li class="d4"><h2>Safety</h2><p>24/7 under safety</p><li>
+</ul>
+    </div>
+</div>
+<div style="color:brown;font-weight: bold;margin-top: 20px;text-align: center;">| VIDEO VIEW</div>
+<iframe src="https://www.youtube.com/embed/mJVuZiK9a6I" frameborder="0"></iframe>
+<div class="cardscon">
+    <div class="cards">
+        <h2 style="color: darkblue;">34</h2>
+        <p>buildings <br>finished now</p>
+    </div>
+     <div class="cards">
+        <h2 style="color: darkblue;">12</h2>
+        <p>years<br>experience</p>
+    </div>
+     <div class="cards">
+        <h2 style="color: darkblue;">24</h2>
+        <p>awards for<br>our work</p>
+    </div>
+</div>
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+<h4 style="color: brown;text-align: center;padding-top: 20px;">|BEST DEAL</h4>
+<div class="bd">
+<h2 style="font-style: italic;padding-left: 80px;">Find Your Best Deal Right Now!</h2>
+<div class="bdbut">
+    <button>Appartment</button>
+    <button>Villa House</button>
+    <button>Pent House</button>
+</div>
+</div>
+<div class="bestdeals">
+<div class="flat">
+    <div class="bdd" style="font-weight:lighter;opacity: 80%">
+        <p>Total Flat Squares</p>
+        <p>Flat Number</p>
+        <p>Number of Rooms</p>
+        <p>Parking Available</p>
+        <p>Payment Process</p>
+    </div>
+     <div class="bddd" style="font-size: large;font-weight: bolder;">
+        <p class="bd1" >185m2</p>
+        <p class="bd2">26th</p>
+        <p class="bd3">4</p>
+        <p class="bd4">yes</p>
+        <p class="bd5">Bank</p>
+    </div>
+</div>
+<img class="bsimg" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b26b7c122356183.60d845207b3ba.jpg" alt="">
+<div class="info">
+    <h4 style="font-weight: bolder;font-size: large;">Extra Info About Property</h4>
+    <p style="font-weight:lighter;opacity: 80%">A villa is a type of house that was originally an ancient Roman upper <br> 
+        class country house that provided an escape from urban life.Since its <br> 
+        origins in the Roman villa,the idea and function of a villa have evolved <br> 
+        considerably.</p>
+    <button class="button">Schedule a Visit</button>
+</div>
+</div>
+<h4 style="color: brown;text-align: center;">|PROPERTIES</h4>
+<P style="font-size:x-large;font-weight: bolder;font-style: italic;text-align: center;">We provide The Best <br>Property You Like</P>
+<div class="cardscontainer">
+    <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://www.angsana.com/_next/image?url=https:%2F%2Fwww.angsana.com%2Fassets%2F2023-06%2FBeachfront%20Three%20Bedroom%20Pool%20Villa%20OV_0.jpg&w=3840&q=75" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://villascroatia.com/storage/2020/08/modern-luxury-villa-pool-medulin-croatia-13-1.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse2.mm.bing.net/th/id/OIP.GADLLll-p4kU69-MJV1MnQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse3.mm.bing.net/th/id/OIP.x2N_h2uPy8XgfF-tnGkjRQHaE8?r=0&w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse3.mm.bing.net/th/id/OIP.3Nf_u8Qif0b9W0vfVDvhpwHaD_?r=0&w=2600&h=1400&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+     <div class="card">
+        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse1.mm.bing.net/th/id/OIP.EdiA8rmZVsoaN_ruqBYv9gHaFV?r=0&w=1500&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <div class="villad">
+            <p>Bedrooms <b>8</b></p>
+            <p>Bathrooms <b>8</b></p>
+            <p>Area <b>545m2</b></p>
+            <p>Floor <b>3</b></p>
+            <p>Parking <b>6 spots</b></p>
+        </div>
+        <button>Schedule a Visit</button>
+    </div>
+</div>
+<div class="banner2">
+    <img src="https://aqualinabahamas.com/wp-content/uploads/2021/11/Aqualina-Blog-2-1080x628.png" alt="">
+    <h1 class="font2">Get in Touch With <br> Our Agents</h1>
+</div>
+<div class="address">
+<iframe class="add" style="width: 500px;height: 430px;" src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945841.0202770731!2d78.47870441294879!3d15.861889316204774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a47be2b0a6e8d%3A0xb5ed5eea5e1df24!2sMYRA%20GOLDEN%20BEACH%20RESORT!5e0!3m2!1sen!2sin!4v1754218168811!5m2!1sen!2sin" frameborder="0"></iframe>
+<div class="formcon">
+    <form class="signup">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="enter your full name">
+         <label for="phone">Phone Number</label>
+        <input type="tel" id="number" name="phone" placeholder="enter your valid phone number">
+         <label for="Email">Email Address</label>
+        <input type="email" id="Email" name="name" placeholder="example@gmail.com">
+         <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="enter your subject">
+         <label for="Message">Message</label>
+        <input type="text" id="Message" name="Message" placeholder="enter your Message">
+        <button>Send Message</button>
+    </form>
+</div>
+</div>
+<div class="end">
+<div class="e1"><i class="fa-solid fa-phone"></i>- 010-020-0340</div>
+<div class="e2"><i class="fa-solid fa-envelope"></i> info@villa.co</div>
+</div>
+<footer>
+    <h4>copyright &copy; Beach Bliss Villa Agency Ldt.All Rights Reserved.Design:Harsha</h4>
+</footer>
+</body>
+</html>
+ 
