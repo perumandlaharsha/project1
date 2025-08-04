@@ -26,15 +26,16 @@
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background-color:beige;
+        padding: 5px;
+        background-color:gainsboro;
     }
     .logo i:hover{
-        background-color: orange;
+        background-color:#ea5e2b;
     }
      header{
             color: black;
-            background-color: burlywood;
-            border: 2px solid black;
+            background-color:white;
+            border: 2px solid white;
              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 2px;
             justify-content: space-between;
@@ -72,7 +73,7 @@
         border-radius: 30px;
     }
     .linkcontainer button:hover{
-         background-color:#ff0000;
+         background-color:#ea5e2b;
 
     }
     .banner{
@@ -94,16 +95,24 @@
         color:white;
         font-size:50px;
         font-weight:bolder;
-        top: 30%;
-        left: 20%;
+        top: 50%;
+        left: 40%;
         transform: translate(-50%,-50%);
     }
     .features{
-        display:inline-flex;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
         column-gap: 40px;
-        justify-content: center;
-        align-content: center;
+       justify-items: center;
+
     }
+       .i1{
+        position: relative;
+        display: block;
+        z-index: 100;
+        margin-left: 120px;
+        margin-right: 30px;
+       }
     .detailslogo{
     display:grid;
     grid-template-columns: 1;
@@ -113,25 +122,24 @@
 
     }
     .details{
-        display:inline-flex;
+        display:flex;
+        justify-content: center;
         border: 1px solid black;
+        width: 250px;
+        height: 400px;
+        margin-top: 30px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
        
     }
-    .daata{
-        padding-left: 10px;
-      margin-right: 20px;
-
-    }
     .d2{
-        padding-top: 15px;
+        padding-top: 1px;
     }
     .d3{
-        padding-top: 15px;
+        padding-top: 2px;
        
     }
     .d4{
-        padding-top: 15px;
+        padding-top: 2px;
     }
     iframe{
         width: 1000px;
@@ -140,6 +148,40 @@
         padding-top: 15px;
         margin-bottom: 30px;
     }
+      .ficon{
+        position: absolute;
+        z-index: 200;
+        top: 1100px;
+        left: 140px;
+        transform: translate(-50%,-50%);
+       
+    }
+      .vicon{
+        position: relative;
+        display: block;
+        z-index: 100;
+        margin-top: 50px;
+        width: 1240px;
+        height: 500px;
+    }
+    .fontv{
+        position: absolute;
+        z-index: 200;
+        top: 1200px;
+        left: 500px;
+    }
+
+    .youtube{
+        position: absolute;
+        z-index: 200;
+        top:1400px;
+        left: 50px;
+        width: 900px;
+        height: 550px;
+        padding-top: 15px;
+        margin-bottom: 30px;
+
+    }
     .cards{
         display: flex;
         flex-wrap: wrap;
@@ -147,7 +189,8 @@
         height: 50px;
         border: 2px solid black;
         border-radius: 10px;
-        background-color:lightblue;
+        background-color:rgb(255, 207, 189);
+        margin-top: 400px;
         position: relative;
         z-index: 100;
         column-gap: 20px;
@@ -163,35 +206,35 @@
        margin-top: 10px;
     }
     .circle1{
-        background-color: darkblue;
+        background-color:#ea5e2b;
         height: 40px;
         width: 40px;
         border-radius: 50%;
         position: absolute;
         z-index: 200;
-        top: 1713px;
+        top: 2070px;
         left:290px;
         transform: translate(-50%,-50%);
     }
       .circle2{
-        background-color: darkblue;
+        background-color:#ea5e2b;
         height: 40px;
         width: 40px;
         border-radius: 50%;
         position: absolute;
         z-index: 200;
-        top: 1713px;
+        top: 2070px;
         left:700px;
         transform: translate(-50%,-50%);
     }
       .circle3{
-        background-color: darkblue;
+        background-color:#ea5e2b;
         height: 40px;
         width: 40px;
         border-radius: 50%;
         position: absolute;
         z-index: 200;
-        top: 1713px;
+        top: 2070px;
         left:1120px;
         transform: translate(-50%,-50%);
     }
@@ -203,7 +246,7 @@
     border-radius: 5px;
    }
    .bd button:hover{
-    background-color:#ff0000;
+    background-color:#ea5e2b;
    }
    .bd{
     display:flex;
@@ -267,7 +310,7 @@
         height: 30px;
 }
 .button:hover{
-         background-color:#ff0000;
+         background-color:#ea5e2b;
 }
 .card{
     width: 350px;
@@ -275,7 +318,7 @@
     border: 1px solid black;
     border-radius: 10px;
     justify-items:left;
-    background-color: #f5f5dcb2;
+    background-color:rgba(234, 234, 234, 0.596);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .cost{
@@ -287,6 +330,7 @@
 .villad{
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    padding-left: 20px;
 }
 .card button{
         color:white;
@@ -295,9 +339,10 @@
         border-radius: 30px;
         height: 30px;
         margin-left: 120px;
+        margin-top: 20px;
 }
 .card button:hover{
-         background-color:#ff0000;
+         background-color:#ea5e2b;
 }
 .cardscontainer{
     display: grid;
@@ -305,17 +350,45 @@
     justify-items: center;
     row-gap: 20px;
 }
+      .banner2{
+        position: relative;
+        display: block;
+        z-index: 100;
+        margin-top: 50px;
+        width: 1240px;
+        height: 500px;
+    }
+    .fontc{
+        position: absolute;
+        z-index: 200;
+        top: 4180px;
+        left: 500px;
+    }
+
+    .address{
+        position: absolute;
+        z-index: 200;
+        top:4350px;
+        width: 900px;
+        height: 550px;
+        padding-top: 15px;
+        margin-bottom: 30px;
+
+    }
 .address{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 30px;
+    margin-left: 30px;
 }
 .formcon {
       padding: 30px;
       border-radius: 10px;
+     background-color:white;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      width: 500px;
+      width: 300px;
       height: 400px;
+     
     }
 
     label {
@@ -339,7 +412,7 @@
         padding: 5px;
         border-radius: 10px;
         margin-top: 15px;
-        margin-left: 220px;
+        margin-left: 100px;
     }
     .signup button:hover{
         background-color: #ea5e2b;
@@ -367,23 +440,36 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    .end{
+    .foot{
         display: flex;
-        column-gap: 80px;
         margin-left: 150px;
-        margin-top: 2px;
+        margin-top: 320px;
+         border: 1px solid black;
+        border-radius: 5px;
+        width: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .e1{
-        border: 1px solid black;
+        padding-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+     .foot2{
+        display: flex;
+        margin-left: 50px;
+          margin-top: 320px;
+         border: 1px solid black;
         border-radius: 5px;
-        padding: 20px;
+        width: 200px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
      .e2{
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .phin{
+        display: flex;
     }
     footer{
         background-color: black;
@@ -397,8 +483,8 @@
 <body>
 <div class="media">
     <div class="pp">
-    <div><i class="fa-solid fa-envelope"></i>info@villa.co</div>
-    <div><i class="fa-solid fa-circle-info"></i>beachbliss.com</div>
+    <div><img style="height:15px;width:20px;" src="project assets/email-icon.png" alt=""> info@villa.co</div>
+    <div><i class="fa-solid fa-map"></i> myragoldenbeach</div>
 </div>
     <div class="logo">
     <i class="fa-brands fa-instagram"></i>
@@ -409,7 +495,7 @@
 </div>
 <!--Header part-->
    <header>
-    <h2>BEACH BLISS</h2>
+    <h2 style="padding-left: 50px;">VILLA</h2>
     <ul class="linkcontainer">
         <li class="link1"><a href="http://127.0.0.1:5500/home.html" target="_blank">Home</a></li>
         <li class="link"><a href="http://127.0.0.1:5500/properties.html" target="_blank">Properties</a></li>
@@ -419,71 +505,76 @@
     </ul>
 </header>
 <div class="banner">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/56c16b140281443.623e932872228.jpg" alt="villa image">
+    <img src="project assets/banner-01.jpg" alt="villa image">
     <div class="font">
     <P><B>HURRY!!<br>GET THE BEST <br>VILLA FOR YOU.</B></P>
 </div>
 </div>
 <!--featured part-->
 <div class="features">
-    <img style="width: 350px;height: 500px;padding-left: 120px;" src="https://i.pinimg.com/originals/b7/bc/13/b7bc1376358ee6ba089cb40347e52db3.jpg" alt="">
+   <img class="i1" src="project assets/featured.jpg" alt="">
     <div class="data">
-        <h4 style="color: brown;">FEATURED</h4>
-        <h1>Best Resort & Sea View</h1>
+        <h4 style="color:#ea5e2b">FEATURED</h4>
+        <h1>Best Appartment<br>& Sea View</h1>
         <br>
-        <p style="color: brown;">Best Useful Links?</p>
-        <p>Beach bliss is the one of the top villa in chirala,<br>
-            and it provides the luxury lifestyle,<br>
+        <p style="color:#ea5e2b;">Best Useful Links?</p>
+        <p style="font-size: small;">Beach bliss is the one of the top villa company in india,
+            and it provides the luxury lifestyle services,schedule a visit and
             please tell your friends about it</p>
-        <p style="color: brown;">Review of customers?</p>
-        <p style="color: brown;">Why is this villa best?</p>
+        <p>Review of customers?</p>
+        <p>Why is this villa best?</p>
     </div>
     <div class="details">
         <div class="detailslogo">
-                <i class="fa-solid fa-house"></i>
-                <i class="fa-solid fa-file-contract"></i>
-                <i class="fa-solid fa-money-check"></i>
-                <i class="fa-solid fa-person-shelter"></i>
+                <img src="project assets/info-icon-01.png" alt="">
+                <img src="project assets/info-icon-02.png" alt="">
+                <img src="project assets/info-icon-03.png" alt="">
+                <img src="project assets/info-icon-04.png" alt="">
         </div>
         <ul class="daata">
-        <li class="d1"><h2>250 M2</h2><p>House plot squares</p></li>
-        <li class="d2"><h2>Constract</h2><p>construction approved</p></li>
-        <li class="d3"><h2>Payment</h2><p>Payment process</p></li>
-        <li class="d4"><h2>Safety</h2><p>24/7 under safety</p><li>
+        <li class="d1"><h2>250 M2</h2><p style="font-size: small;opacity: 50%;">House plot squares</p></li>
+        <li class="d2"><h2>Constract</h2><p style="font-size: small;opacity: 50%;">construction approved</p></li>
+        <li class="d3"><h2>Payment</h2><p style="font-size: small;opacity: 50%;">Payment process</p></li>
+        <li class="d4"><h2>Safety</h2><p style="font-size: small;opacity: 50%;">24/7 under safety</p><li>
 </ul>
     </div>
 </div>
+<img class="ficon" style="height: 50px;width: 50px;border-radius: 50%;background-color: #ea5e2b;padding: 10px;" src="project assets/featured-icon.png" alt="">
 <!--Video view-->
-<div style="color:brown;font-weight: bold;margin-top: 20px;text-align: center;">| VIDEO VIEW</div>
-<iframe src="https://www.youtube.com/embed/mJVuZiK9a6I" frameborder="0"></iframe>
+<img class="vicon" src="project assets/video-bg.jpg" alt="">
+<div class="fontv">
+<div style="color:#ea5e2b;font-weight: bold;margin-top: 20px;text-align: center;">| VIDEO VIEW</div>
+<div style="color: white;font-weight: bolder;font-size:xx-large;text-align: center;padding-top: 20px;">Get Closer View <br> & Different Feeling</div>
+</div>
+<iframe class="youtube" src="https://www.youtube.com/embed/mJVuZiK9a6I" frameborder=""></iframe>
 <!--cards with circles part-->
 <div class="cardscon">
     <div class="cards">
-        <h2 style="color: darkblue;">34</h2>
+        <h2 style="color:#ea5e2b;">34</h2>
         <p>buildings <br>finished now</p>
     </div>
      <div class="cards">
-        <h2 style="color: darkblue;">12</h2>
+        <h2 style="color:#ea5e2b;">12</h2>
         <p>years<br>experience</p>
     </div>
      <div class="cards">
-        <h2 style="color: darkblue;">24</h2>
+        <h2 style="color:#ea5e2b;">24</h2>
         <p>awards for<br>our work</p>
     </div>
 </div>
 <div class="circle1"></div>
 <div class="circle2"></div>
 <div class="circle3"></div>
-<h4 style="color: brown;text-align: center;padding-top: 20px;">|BEST DEAL</h4>
+<!--best deals part-->
+<h4 style="color:#ea5e2b;padding-top: 20px;padding-left: 50px;">|BEST DEAL</h4>
 <div class="bd">
-<h2 style="font-style: italic;padding-left: 50px;">Find Your Best Deal Right Now!</h2>
+<h2 style="font-style: italic;padding-left: 50px;">Find Your Best Deal <br> Right Now!</h2>
 <div class="bdbut">
     <button>Appartment</button>
     <button>Villa House</button>
     <button>Pent House</button>
 </div>
 </div>
-<!--best deals part-->
 <div class="bestdeals">
 <div class="flat">
     <div class="bdd" style="font-weight:lighter;opacity: 80%">
@@ -501,7 +592,7 @@
         <p class="bd5">Bank</p>
     </div>
 </div>
-<img class="bsimg" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b26b7c122356183.60d845207b3ba.jpg" alt="">
+<img class="bsimg" src="project assets/deal-01.jpg" alt="">
 <div class="info">
     <h4 style="font-weight: bolder;font-size: large;">Extra Info About Property</h4>
     <p style="font-weight:lighter;opacity: 80%">A villa is a type of house that was originally an ancient Roman upper <br> 
@@ -512,13 +603,13 @@
 </div>
 </div>
 <!--properties part-->
-<h4 style="color: brown;text-align: center;">|PROPERTIES</h4>
-<P style="font-size:x-large;font-weight: bolder;font-style: italic;text-align: center;">We provide The Best <br>Property You Like</P>
+<h4 style="color:#ea5e2b;text-align: center;padding-top: 50px;">|PROPERTIES</h4>
+<P style="font-size:x-large;font-weight: bolder;text-align: center;">We provide The Best <br>Property You Like</P>
 <div class="cardscontainer">
     <div class="card">
-        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://www.angsana.com/_next/image?url=https:%2F%2Fwww.angsana.com%2Fassets%2F2023-06%2FBeachfront%20Three%20Bedroom%20Pool%20Villa%20OV_0.jpg&w=3840&q=75" alt="">
-        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
-        <h4 style="font-weight: bolder;font-size: large;">18 New Street Miami,OR 567890</h4>
+        <img style="width: 300px;height: 250px;border-radius: 10px;padding-left: 30px;padding-top: 15px;" src="project assets/property-01.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#f4a081;font-weight: lighter;text-align: center;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;padding-left: 20px;">18 New Street Miami,OR 567890</h4>
         <div class="villad">
             <p>Bedrooms <b>8</b></p>
             <p>Bathrooms <b>8</b></p>
@@ -529,9 +620,9 @@
         <button>Schedule a Visit</button>
     </div>
      <div class="card">
-        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://villascroatia.com/storage/2020/08/modern-luxury-villa-pool-medulin-croatia-13-1.jpg" alt="">
-        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
-        <h4 style="font-weight: bolder;font-size: large;">19 New Street Miami,OR 567890</h4>
+        <img style="width: 300px;height: 250px;border-radius: 10px;padding-left: 30px;padding-top: 15px;" src="project assets/property-02.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#f4a081;font-weight: lighter;text-align: center;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;padding-left: 20px;">19 New Street Miami,OR 567890</h4>
         <div class="villad">
             <p>Bedrooms <b>8</b></p>
             <p>Bathrooms <b>8</b></p>
@@ -542,9 +633,9 @@
         <button>Schedule a Visit</button>
     </div>
      <div class="card">
-        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse2.mm.bing.net/th/id/OIP.GADLLll-p4kU69-MJV1MnQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
-        <h4 style="font-weight: bolder;font-size: large;">20 New Street Miami,OR 567890</h4>
+        <img style="width: 300px;height: 250px;border-radius: 10px;padding-left: 30px;padding-top: 15px;" src="project assets/property-03.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#f4a081;font-weight: lighter;text-align: center;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;padding-left: 20px;">20 New Street Miami,OR 567890</h4>
         <div class="villad">
             <p>Bedrooms <b>8</b></p>
             <p>Bathrooms <b>8</b></p>
@@ -555,9 +646,9 @@
         <button>Schedule a Visit</button>
     </div>
      <div class="card">
-        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse3.mm.bing.net/th/id/OIP.x2N_h2uPy8XgfF-tnGkjRQHaE8?r=0&w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
-        <h4 style="font-weight: bolder;font-size: large;">21 New Street Miami,OR 567890</h4>
+        <img style="width: 300px;height: 250px;border-radius: 10px;padding-left: 30px;padding-top: 15px;;" src="project assets/property-04.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#f4a081;font-weight: lighter;text-align: center;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;padding-left: 20px;">21 New Street Miami,OR 567890</h4>
         <div class="villad">
             <p>Bedrooms <b>8</b></p>
             <p>Bathrooms <b>8</b></p>
@@ -568,9 +659,9 @@
         <button>Schedule a Visit</button>
     </div>
      <div class="card">
-        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse3.mm.bing.net/th/id/OIP.3Nf_u8Qif0b9W0vfVDvhpwHaD_?r=0&w=2600&h=1400&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
-        <h4 style="font-weight: bolder;font-size: large;">22 New Street Miami,OR 567890</h4>
+        <img style="width: 300px;height: 250px;border-radius: 10px;padding-left: 30px;padding-top: 15px;" src="project assets/property-05.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#f4a081;font-weight: lighter;text-align: center;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;padding-left: 20px;">22 New Street Miami,OR 567890</h4>
         <div class="villad">
             <p>Bedrooms <b>8</b></p>
             <p>Bathrooms <b>8</b></p>
@@ -581,9 +672,9 @@
         <button>Schedule a Visit</button>
     </div>
      <div class="card">
-        <img style="width: 350px;height: 300px;border-radius: 10px;" src="https://tse1.mm.bing.net/th/id/OIP.EdiA8rmZVsoaN_ruqBYv9gHaFV?r=0&w=1500&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#ea5e2b;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
-        <h4 style="font-weight: bolder;font-size: large;">23 New Street Miami,OR 567890</h4>
+        <img style="width: 300px;height: 250px;border-radius: 10px;padding-left: 30px;padding-top: 15px;" src="project assets/property-06.jpg" alt="">
+        <div class="cost"><h5 style="border:1px solid black; border-radius: 5px;width: 80px;background-color:#f4a081;font-weight: lighter;text-align: center;">Luxury Villa</h5><h4 style="color:#ea5e2b;"> $2.264.000</h4></div>
+        <h4 style="font-weight: bolder;font-size: large;padding-left: 20px;">23 New Street Miami,OR 567890</h4>
         <div class="villad">
             <p>Bedrooms <b>8</b></p>
             <p>Bathrooms <b>8</b></p>
@@ -595,12 +686,14 @@
     </div>
 </div>
 <!--get in touch part-->
-<div class="banner2">
-    <img src="https://aqualinabahamas.com/wp-content/uploads/2021/11/Aqualina-Blog-2-1080x628.png" alt="">
-    <h1 class="font2">Get in Touch With <br> Our Agents</h1>
+    <img class="banner2" src="project assets/contact-bg.jpg" alt="">
+    <div class="fontc">
+<div style="color:#ea5e2b;font-weight: bold;margin-top: 20px;text-align: center;">| CONTACT US</div>
+<div style="color: white;font-weight: bolder;font-size:xx-large;text-align: center;padding-top: 20px;">Get in Touch With<br>Our Agents</div>
+</div>
 </div>
 <div class="address">
-<iframe class="add" style="width: 500px;height: 430px;" src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945841.0202770731!2d78.47870441294879!3d15.861889316204774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a47be2b0a6e8d%3A0xb5ed5eea5e1df24!2sMYRA%20GOLDEN%20BEACH%20RESORT!5e0!3m2!1sen!2sin!4v1754218168811!5m2!1sen!2sin" frameborder="0"></iframe>
+<iframe class="add" style="width: 500px;height: 430px;margin-left: 5px;" src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945841.0202770731!2d78.47870441294879!3d15.861889316204774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a47be2b0a6e8d%3A0xb5ed5eea5e1df24!2sMYRA%20GOLDEN%20BEACH%20RESORT!5e0!3m2!1sen!2sin!4v1754218168811!5m2!1sen!2sin" frameborder="0"></iframe>
 <div class="formcon">
     <form class="signup">
         <label for="name">Full Name</label>
@@ -617,10 +710,24 @@
     </form>
 </div>
 </div>
+<div class="phin">
+<div class="foot">
 <div class="end">
-<div class="e1"><i class="fa-solid fa-phone"></i>- 010-020-0340</div>
-<div class="e2"><i class="fa-solid fa-envelope"></i> info@villa.co</div>
+<div class="e1"><img src="project assets/phone-icon.png" style="width: min-content;height: min-content;" alt=""></div>
 </div>
+   <div class="en1">
+    <h4>010-020-0340</h4><p style="font-size: small;">phone number</p>
+</div>
+</div>
+<div class="foot2">
+    <div class="end2">
+<div class="e2"><img src="project assets/email-icon.png" style="width: min-content;height: min-content;" alt=""></div>
+</div>
+    <div class="en2">
+    <h4>info@villa.co</h4><p style="font-size: small;">company email</p>
+</div>
+    </div>
+    </div>
 <!--footer part-->
 <footer>
     <h4>copyright &copy; Beach Bliss Villa Agency Ldt.All Rights Reserved.Design:Harsha</h4>

@@ -6,7 +6,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yadayada..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact us</title>
     <style>
-                .media{
+    .media{
         display: flex;
         flex-wrap: wrap;
     }
@@ -25,15 +25,16 @@
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background-color:beige;
+        padding: 5px;
+        background-color:gainsboro;
     }
     .logo i:hover{
-        background-color: orange;
+        background-color:#ea5e2b;
     }
      header{
             color: black;
-            background-color: burlywood;
-            border: 2px solid black;
+            background-color:white;
+            border: 2px solid white;
              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 2px;
             justify-content: space-between;
@@ -71,7 +72,7 @@
         border-radius: 30px;
     }
     .linkcontainer button:hover{
-         background-color:#ff0000;
+         background-color:#ea5e2b;
 
     }
     .banner{
@@ -100,22 +101,32 @@
     .contact{
         padding-left: 80px;
     }
-     .e1{
-        border: 1px solid black;
+      .foot{
+        display: flex;
+        margin-left: 50px;
+         border: 1px solid black;
         border-radius: 5px;
-        padding: 20px;
-        width: 150px;
-        text-align: center;
-        margin-bottom: 30px;
+        width: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .e1{
+        padding-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+     .foot2{
+        display: flex;
+        margin-left: 50px;
+        margin-top: 30px;
+         border: 1px solid black;
+        border-radius: 5px;
+        width: 200px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
      .e2{
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 20px;
-        width: 150px;
-        text-align: center;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .formcon {
       padding: 30px;
@@ -165,10 +176,10 @@
     </style>
 </head>
 <body>
-        <div class="media">
+<div class="media">
     <div class="pp">
-    <div><i class="fa-solid fa-envelope"></i>info@villa.co</div>
-    <div><i class="fa-solid fa-circle-info"></i>beachbliss.com</div>
+    <div><img style="height:15px;width:20px;" src="project assets/email-icon.png" alt=""> info@villa.co</div>
+    <div><i class="fa-solid fa-map"></i> myragoldenbeach</div>
 </div>
     <div class="logo">
     <i class="fa-brands fa-instagram"></i>
@@ -178,7 +189,7 @@
     </div>
 </div>
    <header>
-    <h2>BEACH BLISS</h2>
+    <h2 style="padding-left: 50px;">VILLA</h2>
     <ul class="linkcontainer">
         <li class="link"><a href="http://127.0.0.1:5500/home.html" target="_blank">Home</a></li>
         <li class="link"><a href="http://127.0.0.1:5500/properties.html" target="_blank">Properties</a></li>
@@ -188,18 +199,32 @@
     </ul>
 </header>
 <div class="banner">
-    <img src="https://img.freepik.com/premium-photo/contemporary-villa-night-colored-led-lighting-no-one-is-inside_410516-16874.jpg" alt="villa image">
+    <img src="project assets/page-heading-bg.jpg" alt="villa image">
     <div class="font">
     <P><b>CONTACT US</B></P>
 </div>
 </div>
 <div class="contactus">
 <div class="contact">
-<h4 style="color: brown;padding-top: 20px;">|CONTACT US</h4>
+<h4 style="color:#ea5e2b;padding-top: 20px;">|CONTACT US</h4>
 <h1>Get In Touch <br>With Our Agents</h1>
 <p style="font-size: small;">Beach bliss is the one of the top villas company all over the world,<br>and it provides the luxury lifestyle,please tell your friends about it</p>
-<div class="e1"><i class="fa-solid fa-phone"></i> 010-020-0340</div>
-<div class="e2"><i class="fa-solid fa-envelope"></i> info@villa.co</div>
+<div class="foot">
+<div class="end">
+<div class="e1"><img src="project assets/phone-icon.png" style="width: min-content;height: min-content;" alt=""></div>
+</div>
+   <div class="en1">
+    <h4>010-020-0340</h4><p style="font-size: small;">phone number</p>
+</div>
+</div>
+<div class="foot2">
+    <div class="end2">
+<div class="e2"><img src="project assets/email-icon.png" style="width: min-content;height: min-content;" alt=""></div>
+</div>
+    <div class="en2">
+    <h4>info@villa.co</h4><p style="font-size: small;">company email</p>
+</div>
+    </div>
 </div>
 <div class="formcon">
     <form class="signup">
